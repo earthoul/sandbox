@@ -40,7 +40,7 @@ head {
 /* Grid */
 .container {
   display: grid;
-  grid-template: "header" 12rem "nav2" auto "main" auto / 1fr;
+  grid-template: "header" 12rem "nav-icon" auto "main" auto / 1fr;
   z-index: 0;
 }
 
@@ -55,12 +55,12 @@ head {
 }
 
 /* Nav icons */
-.nav2 {
+.nav-icon {
   background-color: #98eee6;
-  grid-area: nav2;
+  grid-area: nav-icon;
 }
 
-.nav2 ul {
+.nav-icon ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -69,7 +69,7 @@ head {
   padding: 0;
 }
 
-.nav2 li {
+.nav-icon li {
   background-color: #168a7f;
   border-radius: 20px;
   color: #e1e1e1;
