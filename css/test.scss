@@ -48,6 +48,7 @@ head {
     "header" 12rem
     "nav-icon" auto
     "main" auto
+    "footer" minmax(40vh,auto)
     / 1fr;
   z-index: 0;
 }
@@ -94,5 +95,29 @@ head {
   .el {
     border: 2px solid #888;
     border-radius: 10px;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: $text-color;
+  color: $text-color-light;
+  display: inline-grid;
+  grid-area: footer;
+  grid-template-columns: repeat(auto-fit, minmax(33%,1fr));
+}
+
+.footer-logo {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav {
+  padding: 0 1rem;
+  ul {
+    list-style-type: none;
+    padding: 0;
   }
 }
