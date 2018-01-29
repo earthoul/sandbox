@@ -31,6 +31,10 @@ head {
   z-index: 1;
 }
 
+.burger {
+  text-transform: uppercase;
+}
+
 /* Grid */
 .container {
   display: grid;
