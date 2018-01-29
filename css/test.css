@@ -1,9 +1,11 @@
+/* Reset */
 body,
 html {
   margin: 0;
   padding: 0;
 }
 
+/* Color settings */
 /* border-box */
 head {
   display: none;
@@ -15,7 +17,7 @@ head {
   box-sizing: border-box;
 }
 
-/* Navigation*/
+/* Navigation */
 .navbar {
   align-items: center;
   background-color: rgba(204, 204, 204, 0.9);
@@ -42,6 +44,7 @@ head {
   z-index: 0;
 }
 
+/* Header */
 .header {
   background-color: #aef2eb;
   grid-area: header;
@@ -51,6 +54,7 @@ head {
   flex-wrap: wrap;
 }
 
+/* Nav icons */
 .nav2 {
   background-color: #98eee6;
   grid-area: nav2;
@@ -72,6 +76,7 @@ head {
   padding: .5rem 1.5rem;
 }
 
+/* Main area */
 .main {
   grid-area: main;
   display: inline-grid;
