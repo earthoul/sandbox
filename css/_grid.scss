@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  grid-template:
+    "header" 12rem
+    "nav-icon" auto
+    "main" auto
+    "aside" auto
+    "footer" minmax(40vh,auto)
+    / 1fr;
+}
+
+.header {
+  grid-area: header;
+}
+.nav-icon {
+  grid-area: nav-icon;
+}
+.main {
+  grid-area: main;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-auto-rows: minmax(40vh,auto);
+}
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(33%,1fr));
+}
+.footer-logo {
+  grid-column: 1 / -1;
+}

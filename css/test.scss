@@ -1,4 +1,3 @@
-/* Reset */
 @import 'reset';
 
 /* Color settings */
@@ -22,12 +21,12 @@ head {
 /* Navigation */
 
 .navbar{
-  align-items: center;
   background-color: rgba(204,204,204,.9);
   color: $text-color;
   border-top: 5px solid rgba($main-color,.9);
   display: flex;
-  justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
   padding: 1rem 5%;
   position: fixed;
     top: 0;
@@ -40,35 +39,20 @@ head {
   text-transform: uppercase;
 }
 
-/* Grid */
-
-.container {
-  display: grid;
-  grid-template:
-    "header" 12rem
-    "nav-icon" auto
-    "main" auto
-    "footer" minmax(40vh,auto)
-    / 1fr;
-  z-index: 0;
-}
-
 /* Header */
 
 .header {
   background-color: lighten($main-color,25);
-  grid-area: header;
-  align-items: center;
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Nav icons */
 
 .nav-icon {
   background-color: lighten($main-color,20);
-  grid-area: nav-icon;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -88,14 +72,22 @@ head {
 /* Main area */
 
 .main {
-  grid-area: main;
-  display: inline-grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-  grid-auto-rows: minmax(40vh,auto);
   .el {
     border: 2px solid #888;
     border-radius: 10px;
   }
+}
+
+.g-doc {
+  width: 180px;
+  height: 300px;
+  frameborder: 0;
+}
+
+.multi-tw-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 /* Footer */
@@ -103,13 +95,9 @@ head {
 .footer {
   background-color: $text-color;
   color: $text-color-light;
-  display: inline-grid;
-  grid-area: footer;
-  grid-template-columns: repeat(auto-fit, minmax(33%,1fr));
 }
 
 .footer-logo {
-  grid-column: 1 / -1;
   display: flex;
   justify-content: center;
 }
@@ -121,3 +109,5 @@ head {
     padding: 0;
   }
 }
+
+@import 'grid';
